@@ -1,0 +1,251 @@
+/* Basic Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Adjust to match the exact color */
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+  
+  /* Header Styles */
+  .Header {
+    background: #000; /* Adjust to match the exact color */
+    color: #fff;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .Header__nav img {
+    width: 150px; /* Adjust based on actual logo size */
+  }
+  
+  .Header__menu {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .Header__menu li {
+    padding: 0 20px;
+  }
+  
+  .Header__menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .Header__menu a:hover {
+    color: #aaa; /* Adjust to match the design */
+  }
+  
+  /* Hero Section */
+  .MainHeading {
+    text-align: center;
+    padding: 50px 5%;
+    background: linear-gradient(to bottom, #000 50%, #121212 50%); /* Adjust gradient to match design */
+  }
+  
+  .MainHeading h1 {
+    font-size: 2.5rem;
+    color: #0f0; /* Color of the heading */
+    margin-bottom: 20px;
+  }
+  
+  .MainHeading h1 span {
+    color: #fff;
+  }
+  
+  .MainHeading p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #aaa; /* Adjust to match the design */
+  }
+  
+  /* Help Section */
+  .Help {
+    padding: 50px 5%;
+    background: #121212; /* Adjust to match the design */
+    text-align: center;
+  }
+  
+  .Help h2 {
+    font-size: 2rem;
+    color: #0f0; /* Color of the heading */
+    margin-bottom: 20px;
+  }
+  
+  .Help h2 span {
+    color: #fff;
+  }
+  
+  .Help p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #aaa; /* Adjust to match the design */
+  }
+  
+  /* Testimonials Section */
+  .Testimonials {
+    padding: 50px 5%;
+    background: linear-gradient(to bottom, #121212 50%, #000 50%); /* Adjust gradient to match design */
+    text-align: center;
+  }
+  
+  .Testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0f0; /* Color of the heading */
+  }
+  
+  .Testimonials p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #aaa; /* Adjust to match the design */
+  }
+  
+  /* About Section */
+  .About {
+    padding: 50px 5%;
+    background: #121212; /* Adjust to match the design */
+    text-align: center;
+  }
+  
+  .About h2 {
+    font-size: 2rem;
+    color: #0f0; /* Color of the heading */
+    margin-bottom: 20px;
+  }
+  
+  .About p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #aaa; /* Adjust to match the design */
+  }
+  
+  /* CTA Section */
+  .Cta {
+    padding: 50px 5%;
+    background: #000; /* Adjust to match the design */
+    text-align: center;
+  }
+  
+  .Cta h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0f0; /* Color of the heading */
+  }
+  
+  .Cta p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #aaa; /* Adjust to match the design */
+  }
+  
+  .Cta__Button {
+    background-color: #006837; /* Button background color */
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Cta__Button:hover {
+    background-color: #004d26; /* Button hover state */
+  }
+  
+/* Footer Styles Continuation */
+.Footer {
+    background-color: #111; /* Dark background for footer */
+    color: #ccc; /* Light grey text */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 0.9rem;
+  }
+  
+  .Footer div {
+    margin-bottom: 2rem;
+  }
+  
+  .Footer h3 {
+    color: #7db354; /* Greenish color for headings */
+    margin-bottom: 1rem;
+  }
+  
+  .Footer__links ul,
+  .Footer__contact ul,
+  .Footer__social a {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .Footer__links ul li,
+  .Footer__contact ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .Footer__links a,
+  .Footer__contact a {
+    color: #ccc; /* Light grey links */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .Footer__links a:hover,
+  .Footer__contact a:hover {
+    color: #fff; /* White color on hover */
+    text-decoration: underline;
+  }
+  
+  .Footer__social a {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+  .Footer__social a:last-child {
+    margin-right: 0;
+  }
+  
+  .Footer__social img {
+    height: 24px; /* Adjust the size as needed */
+    vertical-align: middle;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .Footer__social img:hover {
+    opacity: 0.7;
+  }
+  
+  /* Responsive layout for the footer */
+  @media (max-width: 768px) {
+    .Footer {
+      text-align: center;
+    }
+  
+    .Footer div {
+      margin-bottom: 1rem;
+    }
+  
+    .Footer__social {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  /* Rest of the responsive styles for other sections if necessary */
+  /* ... */
+  
+  /* Complete the rest of your responsive styles as needed */
+  
