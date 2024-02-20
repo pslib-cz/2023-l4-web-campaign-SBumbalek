@@ -37,7 +37,10 @@
     font-weight: 300;
   }
 
-
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 
  nav {
   display: flex;
@@ -49,7 +52,7 @@
  .Heading__img {
   max-width: 100px;
  }
- 
+
  a {
   color: var(--white);
   text-decoration: none;
@@ -78,76 +81,55 @@
 
   /* Help Section */
   .Work {
-    margin-top: 100px;
     text-align: center;
-    padding: 20px 50px 20px 50px;
+    padding: 100px 50px 20px 50px;
     align-items: center;
+  }
+
+  .Work > p {
+    padding-top: 20px;
   }
   
   
   /* Testimonials Section */
   .Testimonials {
-    padding: 50px 5%;
-    background: linear-gradient(to bottom, #121212 50%, #000 50%); /* Adjust gradient to match design */
+    padding: 80px 50px;
     text-align: center;
+  } 
+
+  .Testimonials__list {
+    list-style: none;
+    padding-top: 40px;
   }
-  
-  .Testimonials h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #0f0; /* Color of the heading */
-  }
-  
-  .Testimonials p {
-    font-size: 1.1rem;
-    margin-bottom: 40px;
-    color: #aaa; /* Adjust to match the design */
-  }
-  
+
+
+
   /* About Section */
   .About {
-    padding: 50px 5%;
-    background: #121212; /* Adjust to match the design */
+    padding: 80px 50px;
     text-align: center;
   }
   
-  .About h2 {
-    font-size: 2rem;
-    color: #0f0; /* Color of the heading */
-    margin-bottom: 20px;
-  }
   
   .About p {
     font-size: 1.1rem;
     margin-bottom: 40px;
-    color: #aaa; /* Adjust to match the design */
   }
   
   /* CTA Section */
   .Cta {
-    padding: 50px 5%;
-    background: #000; /* Adjust to match the design */
+    padding: 80px 50px;
     text-align: center;
-  }
-  
-  .Cta h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #0f0; /* Color of the heading */
   }
   
   .Cta p {
     font-size: 1.1rem;
     margin-bottom: 40px;
-    color: #aaa; /* Adjust to match the design */
   }
   
   .Cta__Button {
-    background-color: #006837; /* Button background color */
-    color: #fff;
-    border: none;
+    background-color: var(--green); 
     padding: 1rem 2rem;
-    font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -159,65 +141,15 @@
   
 /* Footer Styles Continuation */
 .Footer {
-    background-color: #111; /* Dark background for footer */
-    color: #ccc; /* Light grey text */
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    font-size: 0.9rem;
-  }
-  
-  .Footer div {
-    margin-bottom: 2rem;
-  }
-  
-  .Footer h3 {
-    color: #7db354; /* Greenish color for headings */
-    margin-bottom: 1rem;
-  }
-  
-  .Footer__links ul,
-  .Footer__contact ul,
-  .Footer__social a {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .Footer__links ul li,
-  .Footer__contact ul li {
-    margin-bottom: 0.5rem;
-  }
-  
-  .Footer__links a,
-  .Footer__contact a {
-    color: #ccc; /* Light grey links */
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .Footer__links a:hover,
-  .Footer__contact a:hover {
-    color: #fff; /* White color on hover */
-    text-decoration: underline;
-  }
-  
-  .Footer__social a {
-    display: inline-block;
-    margin-right: 1rem;
-  }
-  
-  .Footer__social a:last-child {
-    margin-right: 0;
-  }
-  
-  .Footer__social img {
-    height: 24px; /* Adjust the size as needed */
-    vertical-align: middle;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .Footer__social img:hover {
-    opacity: 0.7;
-  }
+  padding: 80px 50px;
+  list-style: none;
+  background-color: black;
+}
+
+.Footer__links {
+  list-style: none;
+
+}
   
   @media (min-width: 582px) {
     .MainHeading__text p {

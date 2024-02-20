@@ -10,6 +10,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 <link rel="stylesheet" href="swiper.css">
 <title>SNB Media - Digital Product Animations</title>
 </head>
@@ -45,37 +49,37 @@
 <section class="Work" id="Work">
     <h2>How can we <span class="TextGrean">Help</span> Your Business?</h2>
     <p>Elevate your brand with animations that captivate and convert. Our expertise turns viewers into customers – with efficiency and flair. Witness the SNB Media impact.</p>
-    <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide"><img src="./img/image_5.jpg" alt="Product Animation Example"></div>
-          <div class="swiper-slide"><img src="./img/image_5.jpg" alt="Product Animation Example"></div>
-          <div class="swiper-slide"><img src="./img/image_5.jpg" alt="Product Animation Example"></div>
-          ...
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-      </div>
+<!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><a href="./img/image_5.jpg" data-lightbox="models" data-title=""><img src="./img/image_5.jpg" alt=""></a></div>
+      <div class="swiper-slide"><a href="./img/image_5.jpg" data-lightbox="models" data-title=""><img src="./img/image_5.jpg" alt=""></a></div>
+      <div class="swiper-slide"><a href="./img/image_5.jpg" data-lightbox="models" data-title=""><img src="./img/image_5.jpg" alt=""></a></div>
     </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+  </div>
 </section>
 
 <section class="Testimonials" id="Testimonial">
-    <h2>What the Others say about us</h2>
+    <h2>What the <span class="TextGrean">Others</span> say about us</h2>
     <p>Hear from our satisfied clients how our animations have revolutionized their marketing efforts and driven sales.</p>
-    <div class="Testimonials__list">
-    </div>
+    <ul class="Testimonials__list">
+        <li><a><img src="./img/testemonial_1.png" alt="Testimonial 1">SNB Media's animations are stunning and effective, elevating our products and sales. Highly recommend!</a></li>
+        <li><a><img src="./img/testemonial_2.png" alt="Testimonial 2">SNB Media's animations are stunning and effective, elevating our products and sales. Highly recommend!</a></li>
+        <li><a><img src="./img/testemonial_3.png" alt="Testimonial 3">SNB Media's animations are stunning and effective, elevating our products and sales. Highly recommend!</a></li>
+    </ul>
 </section>
 
 <section class="About" id="About">
-    <h2>Who are we?</h2>
+    <h2>Who are <span class="TextGrean">we</span>?</h2>
     <p>Meet SNB Media - Your Creative Edge in the Digital Marketplace. We're not just animators, we're storytellers dedicated to bringing your products to life.</p>
     <img src="./img/About_image.png" alt="SNB Media Team">
 </section>
@@ -111,35 +115,33 @@
             <li><a href="mailto:snb.mediahq@gmail.com">snb.mediahq@gmail.com</a></li>
             <li><a href="tel:+420778024624">+420 778 024 624</a></li>
         </ul>
+        <a class="Footer__social" href="https://www.linkedin.com" target="_blank"><img src="./img/linkedin_1.png" alt="LinkedIn"></a>
+        <a class="Footer__social" href="https://www.facebook.com" target="_blank"><img src="./img/facebook_1.png" alt="Facebook"></a>
+        <a class="Footer__social" href="https://www.instagram.com" target="_blank"><img src="./img/instagram_1.png" alt="Instagram"></a>
     </div>
-    <div class="Footer__social">
-        <a href="https://www.linkedin.com" target="_blank"><img src="./img/linkedin_1.png" alt="LinkedIn"></a>
-        <a href="https://www.facebook.com" target="_blank"><img src="./img/facebook_1.png" alt="Facebook"></a>
-        <a href="https://www.instagram.com" target="_blank"><img src="./img/instagram_1.png" alt="Instagram"></a>
-    </div>
+
 </footer>
 <script src="hamburger.js"></script>
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script const swiper = new Swiper(...);>
-    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
-      
-      const swiper = new Swiper(".swiper", {
-          loop: true,
-          spaceBetween: 30,
-          navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-      autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-      },
-      breakpoints: {
-  1200: {
-    slidesPerView: 3,
-  },
-}
-      })
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            loop: true,
+        
+            // If we need pagination
+            pagination: {
+            el: '.swiper-pagination',
+            },
+        
+            // Navigation arrows
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+
+        });
 </script>
 </body>

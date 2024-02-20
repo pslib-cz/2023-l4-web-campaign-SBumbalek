@@ -27,8 +27,14 @@
     transform: scaleY(1);
     transform-origin: top;
     transition: .3s;
-    background-color: var(--DarkGreen);
+  background-color: var(--green);
     text-decoration: none;
+    bottom: 0;
+    z-index: 1;
+}
+
+.Heading__list-item {
+    padding-top: 40px;
 }
 
 .Heading__nav-list--hidden {

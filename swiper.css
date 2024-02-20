@@ -1,4 +1,22 @@
+:root {
+  --green: #5CA430;
+  --white: #ffffff;
+  --background: #222222;
+}
+
 .swiper {
-    width: 600px;
     height: 300px;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-button-prev {
+    color: var(--green);
+  }
+
+  .swiper-button-next {
+    color: var(--green);
   }
