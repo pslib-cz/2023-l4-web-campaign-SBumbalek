@@ -33,6 +33,10 @@
     margin-bottom: 20px;
   }
 
+  h3 {
+    margin-bottom: 20px;
+  }
+
   p {
     font-weight: 300;
   }
@@ -40,6 +44,10 @@
   img {
     max-width: 100%;
     height: auto;
+  }
+
+  li {
+    list-style: none;
   }
 
  nav {
@@ -58,7 +66,6 @@
   text-decoration: none;
  }
   
-  /* Hero Section */
   .MainHeading {
     text-align: center;
     padding: 20px 50px 20px 50px;
@@ -75,11 +82,10 @@
   }
   
   .MainHeading video {
-    max-width: 100%; /* This ensures the video is never wider than its container */
-    height: auto; /* This keeps the video's aspect ratio intact */
+    max-width: 100%; 
+    height: auto;
   }
 
-  /* Help Section */
   .Work {
     text-align: center;
     padding: 100px 50px 20px 50px;
@@ -91,7 +97,6 @@
   }
   
   
-  /* Testimonials Section */
   .Testimonials {
     padding: 80px 50px;
     text-align: center;
@@ -104,7 +109,6 @@
 
 
 
-  /* About Section */
   .About {
     padding: 80px 50px;
     text-align: center;
@@ -116,7 +120,6 @@
     margin-bottom: 40px;
   }
   
-  /* CTA Section */
   .Cta {
     padding: 80px 50px;
     text-align: center;
@@ -128,27 +131,45 @@
   }
   
   .Cta__Button {
-    background-color: var(--green); 
-    padding: 1rem 2rem;
+    padding: 12px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 50px;
+    border: var(--green) solid;
     transition: background-color 0.3s ease;
   }
   
   .Cta__Button:hover {
-    background-color: #004d26; /* Button hover state */
+    background-color: var(--green);
   }
   
-/* Footer Styles Continuation */
 .Footer {
   padding: 80px 50px;
   list-style: none;
   background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .Footer__links {
+  padding: 20px;
   list-style: none;
+  font-weight: 100;
+}
 
+.Footer__img {
+  max-width: 100px;
+  display: none;
+}
+
+.Footer__links li {
+  margin-bottom: 10px;
+}
+
+.Footer__social img {
+  max-width: 40px;
+  margin-top: 32px;
+  margin-right: 10px;
 }
   
   @media (min-width: 582px) {
