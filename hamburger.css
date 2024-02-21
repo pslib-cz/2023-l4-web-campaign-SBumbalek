@@ -55,10 +55,6 @@
 
 @media only screen and (min-width: 790px) {
 
-    .Heading__nav-list {
-        font-size: 20px;
-    }
-
     .hamburger {
         display: none;
     }
@@ -74,5 +70,17 @@
         width: auto;
         padding: 0;
         font-size: 20px;
+        gap: 20px;
+    }
+
+    .Heading__nav-list a:hover {
+        color: var(--green);
+        text-shadow: 0 0 20px var(--green);
+        transition: 0.2s;
+    }
+
+    .Heading__list-item {
+        padding: 0;
+
     }
 }

@@ -21,6 +21,7 @@
   
   .TextGrean {
     color: var(--green);
+    text-shadow: 0 0 20px var(--green);
   }
 
   h1 {
@@ -46,8 +47,16 @@
     height: auto;
   }
 
+  .img__stroke {
+    box-shadow:  0 0 0 3px var(--green), 0 0 20px var(--green);
+  }
+
   li {
     list-style: none;
+  }
+
+  .Section__padding {
+    padding: 80px 50px;
   }
 
 
@@ -69,7 +78,6 @@
   
   .MainHeading {
     text-align: center;
-    padding: 20px 50px 20px 50px;
     align-items: center;
     position: relative;
     overflow: hidden;
@@ -92,7 +100,7 @@
   .gradient__heading {
     position: absolute;
     left: -100px;
-    top: 275px;
+    top: 350px;
     z-index: -1;
     rotate: -10deg;
     width: 200%; 
@@ -102,7 +110,6 @@
 
   .Work {
     text-align: center;
-    padding: 100px 50px 20px 50px;
     align-items: center;
     position: relative;
     overflow: hidden;
@@ -115,7 +122,7 @@
   .gradient__work {
     position: absolute;
     left: -20px;
-    top: 450px;
+    top: 420px;
     z-index: -1;
     rotate:   10deg;
     width: calc(100vw + 50px); 
@@ -125,35 +132,46 @@
   
   
   .Testimonials {
-    padding: 80px 50px;
     text-align: center;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
   } 
 
   .gradient__testemonials {
     position: absolute;
-    left: -100px;
-    top: 480px;
+    left: -20px;
+    top: 730px;
     z-index: -1;
-    rotate: 10deg;
-    width: 1000px; 
+    rotate:  -10deg;
+    width: calc(100vw + 50px); 
     height: 100px; 
-    background: linear-gradient(to bottom , var(--green), transparent);
+    background: linear-gradient(to bottom , var(--green), transparent); 
   }
 
   .Testimonials__list {
     list-style: none;
     padding-top: 40px;
+    max-width: 80%;
+    margin: auto;
   }
 
+  .Testimonials__list p {
+    margin-top: 16px;
+    margin-bottom: 50px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  } 
 
 
   .About {
-    padding: 80px 50px;
     text-align: center;
   }
   
+  .About img {
+    max-width: 80%;
+  }
   
   .About p {
     font-size: 1.1rem;
@@ -161,8 +179,9 @@
   }
   
   .Cta {
-    padding: 80px 50px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
   }
   
   .Cta p {
@@ -181,11 +200,21 @@
   .Cta__Button:hover {
     background-color: var(--green);
   }
+
+  .gradient__cta {
+    position: absolute;
+    left: -35px;
+    top: 50px;
+    z-index: -1;
+    rotate: 10deg;
+    width: calc(100vw + 70px);
+    height: 336px;
+    background: linear-gradient(to bottom , var(--green), transparent);
+  }
   
 .Footer {
-  padding: 80px 50px;
   list-style: none;
-  background-color: black;
+  background-color: var(--background);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -212,8 +241,90 @@
   margin-right: 10px;
 }
   
-  @media (min-width: 550px) {
+@media (min-width: 550px) {
     .MainHeading__text p {
       margin: 0 80px 0 80px ;
     }
+
+    .gradient__heading {
+      top: 310px;
+    }
+
+    .Work p {
+      padding-bottom: 40px;
+    }
+
+    .About {
+      margin: auto;
+    }
+
+    .About img {
+      max-width: 70%;
+    }
+
+    .Testimonials__list p {
+      margin-bottom: 100px;
+      margin-top: 30px;
+    }
+
+    .gradient__work{
+      top: 375px;
+    }
+
+    .gradient__cta {
+      top: 60px;
+    }
+    
   }
+
+  @media (min-width: 790px) {
+    nav {
+      padding: 50px 100px;
+    }
+
+    .Section__padding {
+      padding: 100px 150px;
+    }
+
+    .Work p {
+      padding-bottom: 80px;
+    }
+
+    .gradient__heading {
+      height: 255px;
+      top: 385px;
+    }
+
+    .MainHeading__text p {
+      max-width: 500px;
+      margin: auto;
+      font-weight: 600;
+      font-size: 1.5em;
+      padding-bottom: 50px;
+    }
+
+    h1 {
+      font-size: 4em;
+    }
+
+    h2 {
+      font-size: 2.5em;
+    }
+
+    p {
+      font-size: 1.2em
+    }
+
+    .gradient__work {
+      left: -50px;
+      height: 200px;
+      top: 390px;
+      width: calc(100vw + 100px);
+    }
+
+  }
+
+  @media (min-width: 1200px) {
+
+  }
+

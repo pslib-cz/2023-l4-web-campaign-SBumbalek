@@ -36,7 +36,7 @@
             </div>
         </nav>
     </header>
-    <section class="MainHeading" id="Home">
+    <section class="MainHeading Section__padding" id="Home">
         <div class="gradient__heading">
         </div>
         <div class="MainHeading__text">
@@ -48,7 +48,7 @@
     </div>
 </section>
 
-<section class="Work" id="Work">
+<section class="Work Section__padding" id="Work">
     <div class="gradient__work">
     </div>
     <h2>How can we <span class="TextGrean">Help</span> Your Business?</h2>
@@ -66,38 +66,39 @@
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
   
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
   </div>
 </section>
 
-<section class="Testimonials" id="Testimonial">
+<section class="Testimonials Section__padding" id="Testimonial">
     <h2>What the <span class="TextGrean">Others</span> say about us</h2>
     <p>Hear from our satisfied clients how our animations have revolutionized their marketing efforts and driven sales.</p>
     <div class="gradient__testemonials">
     </div>
     <ul class="Testimonials__list">
-        <li><a><img src="./img/testemonial_1.png" alt="Testimonial 1">SNB Media's animations are stunning and effective, elevating our products and sales. Highly recommend!</a></li>
-        <li><a><img src="./img/testemonial_2.png" alt="Testimonial 2">SNB Media's animations are stunning and effective, elevating our products and sales. Highly recommend!</a></li>
-        <li><a><img src="./img/testemonial_3.png" alt="Testimonial 3">SNB Media's animations are stunning and effective, elevating our products and sales. Highly recommend!</a></li>
+        <li><a><img class="img__stroke" src="./img/testemonial_1.jpg" alt="Testimonial 1"></a></li>
+        <p>SNB Media's animations are stunning and effective, elevating our products and sales. Highly recommend!</p>
+        <li><a><img class="img__stroke" src="./img/testemonial_2.jpg" alt="Testimonial 2"></a></li>
+        <p>SNB Media's animations are stunning and effective, elevating our products and sales. Highly recommend!</p>
+        <li><a><img class="img__stroke" src="./img/testemonial_3.jpg" alt="Testimonial 3"></a></li>
+        <p>SNB Media's animations are stunning and effective, elevating our products and sales. Highly recommend!</p>
     </ul>
 </section>
 
-<section class="About" id="About">
+<section class="About Section__padding" id="About">
     <h2>Who are <span class="TextGrean">we</span>?</h2>
     <p>Meet SNB Media - Your Creative Edge in the Digital Marketplace. We're not just animators, we're storytellers dedicated to bringing your products to life.</p>
-    <img src="./img/About_image.png" alt="SNB Media Team">
+    <a><img class="img__stroke" src="./img/About_image.png" alt="SNB Media Team"></a>
 </section>
 
-<section class="Cta">
-    <h2>Book a <span class="TextGrean">call</span></h2>
+<section class="Cta Section__padding">
+    <div class="gradient__cta">
+    </div>
+    <h2>Book a call</h2>
     <p>Ready to Transform Your Marketing? Book a Strategy Call Today and Unleash Potential.</p>
-    <a class="Cta__Button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/snb-mediahq/20-30-minit-one-on-one-call'});return false;">Schedule time with me</a>
+    <a class="Cta__Button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/snb-mediahq/20-30-minit-one-on-one-call'});return false;">Schedule a call with me</a>
 </section>
 
-<footer class="Footer">
+<footer class="Footer Section__padding">
     <div class="Footer__img">
         <img src="./img/Header_image.png" alt="SNB Media Logo">
     </div>
@@ -147,11 +148,17 @@
             },
         
             // Navigation arrows
-            navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-            },
+            autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
 
+            breakpoints: {
+    1200: {
+        slidesPerView: 3,
+    },
+}
         });
 </script>
 </body>
