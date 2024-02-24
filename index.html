@@ -43,8 +43,11 @@
         <h1>Digital Product <span class="TextGrean">Animations</span></h1>
         <p>Animations that Resonate with Clients and Deliver Results in Just 30 Days!</p>
     </div>
-    <div>   
-        <video src="./img/SNB HD (1).mp4" controls autoplay muted></video>
+    <div>  
+        <iframe class="MainHeading__video"
+        src="https://www.youtube.com/embed/-5c5gs3NgkQ?si=QfTH_pk7TD1UImB7" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe> 
     </div>
 </section>
 
@@ -75,19 +78,19 @@
     <div class="gradient__testemonials">
     </div>
     <ul class="Testimonials__list">
-        <li><a><img class="img__stroke" src="./img/testemonial_1.jpg" alt="Testimonial 1"></a></li>
-        <p>SNB Media's animations are stunning and effective, elevating our products and sales. Highly recommend!</p>
-        <li><a><img class="img__stroke" src="./img/testemonial_2.jpg" alt="Testimonial 2"></a></li>
-        <p>SNB Media's animations are stunning and effective, elevating our products and sales. Highly recommend!</p>
-        <li><a><img class="img__stroke" src="./img/testemonial_3.jpg" alt="Testimonial 3"></a></li>
-        <p>SNB Media's animations are stunning and effective, elevating our products and sales. Highly recommend!</p>
+        <li><a><img class="img__stroke" src="./img/testemonial_1.jpg" alt="Testimonial 1"><p>SNB Media's animations are stunning and effective, elevating our products and sales. Highly recommend!</p></a></li>
+        <li><a><img class="img__stroke" src="./img/testemonial_2.jpg" alt="Testimonial 2"><p>SNB Media's animations are stunning and effective, elevating our products and sales. Highly recommend!</p></a></li>
+        <li><a><img class="img__stroke" src="./img/testemonial_3.jpg" alt="Testimonial 3"></a><p>SNB Media's animations are stunning and effective, elevating our products and sales. Highly recommend!</p></li>
     </ul>
 </section>
 
 <section class="About Section__padding" id="About">
+    <div> 
     <h2>Who are <span class="TextGrean">we</span>?</h2>
-    <p>Meet SNB Media - Your Creative Edge in the Digital Marketplace. We're not just animators, we're storytellers dedicated to bringing your products to life.</p>
-    <a><img class="img__stroke" src="./img/About_image.png" alt="SNB Media Team"></a>
+        <p>Meet SNB Media - Your Creative Edge in the Digital Marketplace. We're not just animators, we're storytellers dedicated to bringing your products to life.</p>
+    </div>
+        <a><img class="img__stroke" src="./img/About_image.png" alt="SNB Media Team"></a>
+
 </section>
 
 <section class="Cta Section__padding">
@@ -153,12 +156,7 @@
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
         },
-
-            breakpoints: {
-    1200: {
-        slidesPerView: 3,
-    },
-}
-        });
+        
+        })
 </script>
 </body>
