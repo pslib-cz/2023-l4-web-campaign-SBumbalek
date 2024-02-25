@@ -170,7 +170,7 @@
   }
   
   .About img {
-    max-width: 80%;
+    max-width: 50%;
   }
   
   .About p {
@@ -178,6 +178,8 @@
     margin-bottom: 40px;
   }
   
+  
+
   .Cta {
     text-align: center;
     position: relative;
@@ -357,9 +359,12 @@
       display: flex;
     text-align: left;
     align-items: center;
+    justify-content: space-around;
     }
-    .About img {
-      max-width: 100%;
+  
+
+    .About div {
+      max-width: 400px;
     }
 
     .Cta {
@@ -380,12 +385,12 @@
     }
 
     h1 {
-      font-size: 5em;
+      font-size: 4em;
     }
 
     .MainHeading__text p {
       max-width: 800px;
-      font-size: 2em;
+      font-size: 1.5em;
     }
 
     .gradient__heading {
@@ -413,11 +418,11 @@
     }
 
     .About div {
-      max-width: 800px;
+      max-width: 50%;
     }
 
     .About p {
-      font-size: 2em;
+      font-size: 1.5em;
     }
 
 
@@ -428,7 +433,7 @@
     .gradient__work{
       width: 225vw;
       left: -100vw;
-      top: 365px;
+      top: 270px;
       height: 260px;
     }
 
@@ -437,15 +442,15 @@
     }
 
     .Heading__list-item a {
-      font-size: 1.5em;
+      font-size: 1.2em;
     }
 
     p {
-      font-size: 2em;
+      font-size: 1.5em;
     }
 
     h2 {
-      font-size: 4em;
+      font-size: 3em;
     }
 
     .Cta p {
