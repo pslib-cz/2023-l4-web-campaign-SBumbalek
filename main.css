@@ -264,7 +264,7 @@
     }
 
     .About img {
-      max-width: 70%;
+      max-width: 300px;
     }
 
     .Testimonials li {
@@ -375,6 +375,10 @@
 
   @media (min-width: 1700px) {
 
+    .Section__padding {
+      padding: 150px 250px;
+    }
+
     h1 {
       font-size: 5em;
     }
@@ -395,6 +399,7 @@
       width: 225vw;
       left: -100vw;
       top: 705px;
+      height: 280px;
     }
 
 
@@ -423,7 +428,8 @@
     .gradient__work{
       width: 225vw;
       left: -100vw;
-      top: 280px;
+      top: 365px;
+      height: 260px;
     }
 
     .Heading__img {
@@ -440,5 +446,13 @@
 
     h2 {
       font-size: 4em;
+    }
+
+    .Cta p {
+      font-size: 1.5em;
+    }
+
+    .Footer__links {
+      font-size: 1.3em
     }
   }
